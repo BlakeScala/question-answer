@@ -1,9 +1,9 @@
 <div class = "well" id="questionWell">
   <h1>{{model.question.mainQuestion}}</h1>
-  {{edit-question question=model.question updateQuestion="updateQuestion"}}
   <p><span class="bold">{{model.question.author}} :</span> {{model.question.notes}}</p>
 
   {{new-answer saveAnswer="saveAnswer" question=model.question}}
+  {{edit-question question=model.question updateQuestion="updateQuestion"}}
 </div>
 <div class ="well" id="comments">
   <h1>Comments</h1>

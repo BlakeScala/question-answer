@@ -10,11 +10,15 @@ export default Ember.Component.extend({
     saveQuestion() {
       var params = {
         author: this.get('author'),
-        mainQuestion: this.get('question'),
+        mainQuestion: this.get('mainQuestion'),
         notes: this.get('notes')
       };
-      this.set('addNewQuestion', false);
-      this.sendAction('saveQuestion', params);
+      if ((Ember.isEmpty(this.get('author'))) || (Ember.isEmpty(this.get('mainQuestion'))) || (Ember.isEmpty(this.get('notes')))) {
+        alert("You must complete the form!");
+      } else {
+        this.set('addNewQuestion', false);
+        this.sendAction('saveQuestion', params);
+      }
     }
   }
 });
