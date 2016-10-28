@@ -82,3 +82,11 @@ body {
 #commentWell {
   background-color: white;
 }
+
+#newQuestion {
+  width: 80%;
+  margin: 0 auto;
+  h1, label, input{
+    font-family: monospace;
+  }
+}
