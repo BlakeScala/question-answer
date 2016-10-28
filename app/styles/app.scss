@@ -39,6 +39,10 @@ $jumboGrey: rgba(#303030, 0.83);
   margin-top: 10px;
 }
 
+.centered {
+  text-align: center;
+}
+
 #newQButton {
   display: block;
   margin: auto;
@@ -48,4 +52,8 @@ $jumboGrey: rgba(#303030, 0.83);
   border: 2px solid darkred;
   color: darkred;
   font-weight: bold;
+}
+
+#latest {
+  font-family: monospace;
 }

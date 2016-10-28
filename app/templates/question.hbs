@@ -2,4 +2,9 @@
 <h3>Asked by {{model.question.author}}</h3>
 <p>{{model.question.notes}}</p>
 
-{{new-answer}}
+{{new-answer saveAnswer="saveAnswer" question=model.question}}
+
+{{#each model.question.answers as |answer|}}
+  <h4>{{answer.author}}</h4>
+  <p>{{answer.content}}</p>
+{{/each}}
