@@ -1,3 +1,22 @@
 #mainTitle {
   text-align: center;
 }
+
+.questionTiles {
+  padding: 0px 10px 0px 10px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#newQButton {
+  display: block;
+  margin: auto;
+  width: 250px;
+  font-size: 22px;
+  font-family: monospace;
+  border: 2px solid darkred;
+  color: darkred;
+  font-weight: bold;
+}
