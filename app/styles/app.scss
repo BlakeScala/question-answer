@@ -1,5 +1,16 @@
 $jumboGrey: rgba(#303030, 0.83);
 
+h1{
+  margin-top: 10px;
+}
+
+body {
+  background-color: grey;
+}
+
+.bold {
+  font-weight: bold;
+}
 .jumbotron {
   background-color: $jumboGrey;
   background-image: url("https://cdn-images-1.medium.com/max/1358/1*e0eQH_9X8jN7yC6AEqlvdQ.jpeg");
@@ -20,6 +31,7 @@ $jumboGrey: rgba(#303030, 0.83);
 .navbar-nav {
   width: 100%;
   text-align: center;
+  border-bottom: 3px solid black;
     li {
     float: none;
     display: inline-block;
@@ -33,10 +45,11 @@ $jumboGrey: rgba(#303030, 0.83);
 
 .questionTiles {
   padding: 0px 10px 0px 10px;
-  width: 70%;
+  width: 90%;
   text-align: center;
   margin: 0 auto;
   margin-top: 10px;
+  background-color: white;
 }
 
 .centered {
@@ -56,4 +69,16 @@ $jumboGrey: rgba(#303030, 0.83);
 
 #latest {
   font-family: monospace;
+  margin-top: 0px;
+}
+
+#latestWell {
+  padding-bottom: 30px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#commentWell {
+  background-color: white;
 }
