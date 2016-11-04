@@ -6,7 +6,6 @@ export default Ember.Component.extend({
   actions: {
     starThis(question) {
       this.get('starredQuestions').add(question);
-      console.log(this.get('starredQuestions').length);
     }
   }
 });
