@@ -6,6 +6,8 @@ export default Ember.Component.extend({
   downvoted: false,
   upvoted: false,
 
+  sortBy: [],
+
   actions: {
     starThis(question) {
       this.get('starredQuestions').add(question);

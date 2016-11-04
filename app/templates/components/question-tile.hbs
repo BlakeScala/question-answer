@@ -1,8 +1,13 @@
-<div class="well questionTiles">
-  <button id="upvote"class="btn btn-primary"{{action 'upvote' question}} disabled={{upvoted}}>⬆</button>
-  <h5 id="rating">{{question.rating}}</h5>
-  <button id="downvote" class="btn btn-danger"{{action 'downvote' question}} disabled={{downvoted}}>⬇</button>
-  {{#link-to 'question' question.id}}<h3>{{question.mainQuestion}}</h3>{{/link-to}}
-  <h5>Asked by {{question.author}}</h5>
-    <button id="star" {{action 'starThis' question}}></button>
-</div>
+{{#each question as |question|}}
+  <div class="well questionTiles">
+    <button id="upvote"class="btn btn-primary"{{action 'upvote' question}} disabled={{upvoted}}>⬆</button>
+    <h5 id="rating">{{question.rating}}</h5>
+    <button id="downvote" class="btn btn-danger"{{action 'downvote' question}} disabled={{downvoted}}>⬇</button>
+
+    {{#link-to 'question' question.id}}
+      <h3>{{question.mainQuestion}}</h3>
+    {{/link-to}}
+    <h5>Asked by {{question.author}}</h5>
+      <button id="addToFavorites" {{action 'starThis' question}}>Add to Favorites</button>
+  </div>
+{{/each}}
