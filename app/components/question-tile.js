@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   starredQuestions: Ember.inject.service(),
-  showStar: true,
   // downvoted: false,
   // upvoted: false,
 
@@ -14,7 +13,6 @@ export default Ember.Component.extend({
   actions: {
     starThis(question) {
       this.get('starredQuestions').add(question);
-      this.set('showStar', 0);
     },
 
     upvote(question) {
