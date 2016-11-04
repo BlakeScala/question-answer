@@ -1,0 +1,8 @@
+<div class ="well" id="comments">
+  <h1>Comments</h1>
+  {{#each question.answers as |answer|}}
+  <div class="well" id="commentWell">
+    <p><span class="bold">{{answer.author}} :</span> {{answer.content}}</p>
+  </div>
+  {{/each}}
+</div>

@@ -5,11 +5,5 @@
   {{new-answer saveAnswer="saveAnswer" question=model.question}}
   {{edit-question question=model.question updateQuestion="updateQuestion"}}
 </div>
-<div class ="well" id="comments">
-  <h1>Comments</h1>
-  {{#each model.question.answers as |answer|}}
-  <div class="well" id="commentWell">
-    <p><span class="bold">{{answer.author}} :</span> {{answer.content}}</p>
-  </div>
-  {{/each}}
-</div>
+
+{{comment-list question=model.question}}

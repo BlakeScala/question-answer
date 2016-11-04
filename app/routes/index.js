@@ -14,14 +14,14 @@ export default Ember.Route.extend({
 
     upvote(question) {
       var count = question.get('rating');
-      count++
+      count++;
       question.set('rating', count);
       question.save();
     },
 
     downvote(question) {
       var count = question.get('rating');
-      count--
+      count--;
       question.set('rating', count);
       question.save();
     }
