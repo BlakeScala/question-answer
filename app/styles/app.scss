@@ -89,6 +89,10 @@ body {
 
 #commentWell {
   background-color: white;
+  margin-bottom: 0px;
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 #newQuestion {
@@ -106,6 +110,7 @@ body {
 #addToFavorites {
   margin-bottom: 10px;
 }
+
 #upvote, #downvote {
   float: right;
   padding: 0px;
@@ -122,4 +127,21 @@ body {
   font-weight: bold;
   margin-left: 4px;
   margin-right: 4px;
+}
+
+#commentRating {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#upvoteComment, #downvoteComment {
+  float: right;
+  padding: 0px;
+  text-align: center;
+  border-radius: 50px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
