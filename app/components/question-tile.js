@@ -3,10 +3,13 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   starredQuestions: Ember.inject.service(),
   showStar: true,
-  downvoted: false,
-  upvoted: false,
+  // downvoted: false,
+  // upvoted: false,
 
-  sortBy: [],
+  sorted: ['rating:desc'],
+  // sortedLH: ['rating:asc'],
+
+  sortedQuestions: Ember.computed.sort('question', 'sorted'),
 
   actions: {
     starThis(question) {
@@ -15,13 +18,21 @@ export default Ember.Component.extend({
     },
 
     upvote(question) {
-      this.set('upvoted', true);
+      // this.set('upvoted', true);
       this.sendAction('upvote', question);
     },
 
     downvote(question) {
       this.sendAction('downvote', question);
-      this.set('downvoted', true);
+      // this.set('downvoted', true);
     },
+
+    worst() {
+      this.set('sorted', ['rating:asc']);
+    },
+
+    best() {
+      this.set('sorted', ['rating:desc']);
+    }
   }
 });
