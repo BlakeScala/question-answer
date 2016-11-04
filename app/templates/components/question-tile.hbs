@@ -1,4 +1,5 @@
 <div class="well questionTiles">
   {{#link-to 'question' question.id}}<h3>{{question.mainQuestion}}</h3>{{/link-to}}
   <h5>Asked by {{question.author}}</h5>
+  <button {{action 'starThis' question}}>Add To Starred Questions</button>
 </div>
