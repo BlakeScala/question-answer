@@ -1,6 +1,13 @@
 <div class ="well" id="comments">
   <h1>Comments</h1>
-  {{#each question.answers as |answer|}}
+  <div style="text-align: center">
+    <div class="filters">
+      <button class="btn btn-primary" {{action 'best'}}>Best</button>
+      <button class="btn btn-danger" {{action 'worst'}}>Worst</button>
+    </div>
+  </div>
+  <br>
+  {{#each sortedAnswers as |answer|}}
   <div class="well" id="commentWell">
     <div class="voting">
       <button id="downvoteComment" class="btn btn-danger"{{action 'downvote' answer}} disabled={{downvoted}}>⬇</button>

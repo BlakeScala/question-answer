@@ -1,5 +1,6 @@
 <div class = "well" id="questionWell">
   <h1>{{model.question.mainQuestion}}</h1>
+  <p><span class="bold">{{model.question.timestamp}}</span></p>
   <p><span class="bold">{{model.question.author}} :</span> {{model.question.notes}}</p>
 
   {{new-answer saveAnswer="saveAnswer" question=model.question}}

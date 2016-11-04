@@ -135,6 +135,7 @@ body {
   font-weight: bold;
   margin-left: 4px;
   margin-right: 4px;
+  margin-top: 0px;
 }
 
 #upvoteComment, #downvoteComment {
@@ -144,4 +145,24 @@ body {
   border-radius: 50px;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+#comments {
+  h1 {
+    font-family: monospace;
+    text-align: center;
+  }
+  p {
+    font-family: monospace;
+  }
+}
+
+#questionWell {
+  h1 {
+    font-family: monospace;
+    font-weight: bold;
+  }
+  p {
+    font-family: monospace;
+  }
 }
