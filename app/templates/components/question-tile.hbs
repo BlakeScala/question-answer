@@ -14,7 +14,7 @@
     {{#link-to 'question' question.id}}
       <h3>{{question.mainQuestion}}</h3>
     {{/link-to}}
-    <h5>Asked by {{question.author}}</h5>
+    <h5>Asked by {{question.author}} on {{question.timestamp}}</h5>
       <button id="addToFavorites" {{action 'starThis' question}}>Add to Favorites</button>
   </div>
 {{/each}}
