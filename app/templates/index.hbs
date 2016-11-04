@@ -2,6 +2,6 @@
 <div class="well" id="latestWell">
   <h1 id="latest" class="centered">Questions</h1>
   {{#each model as |question|}}
-    {{question-tile question=question}}
+    {{question-tile question=question upvote="upvote" downvote="downvote"}}
   {{/each}}
 </div>

@@ -11,7 +11,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         mainQuestion: this.get('mainQuestion'),
-        notes: this.get('notes')
+        notes: this.get('notes'),
+        rating: 0,
       };
       if ((Ember.isEmpty(this.get('author'))) || (Ember.isEmpty(this.get('mainQuestion'))) || (Ember.isEmpty(this.get('notes')))) {
         alert("You must complete the form!");
